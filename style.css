@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* INICIO CABEÇALHO */
+header {
+    position: fixed;
+    width: 100vw;
+    height: 50px;
+    padding: 0.3em;
+    background-color: rgb(39, 39, 39);
+
+}
+
+header h3,
+span {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 24px;
+    text-decoration: none;
+
+}
+
+@media (max-width:500px) {
+
+    header h3,
+    span {
+        font-size: 20px;
+        text-align: center;
+
+    }
+
+    .btn_sair img {
+        height: 26px;
+        margin-bottom: -20px;
+    }
+
+}
+
+.btn_sair {
+    float: right;
+    margin-top: -30px;
+
+}
+
+.btn_sair img {
+    padding: 3px 3px;
+}
+
+.btn_sair img:hover {
+    background-color: whitesmoke;
+    border-radius: 5px 5px;
+    transition: all 0.5s ease 0s;
+}
+
+/* FIM CABEÇALHO */
+
+/* INICIO SIDEBAR */
+.sidebar {
+    position: fixed;
+    top: 50px;
+    height: 100%;
+    width: 250px;
+    background-color: rgb(92, 92, 92);
+
+}
+
+@media (max-width:500px) {
+    .sidebar {
+        position: fixed;
+        top: 50px;
+        height: 260px;
+        width: 100vw;
+
+    }
+
+    .sidebar .menu {
+        margin-top: -35px
+    }
+
+    .sidebar a:hover {
+        background-color: white;
+        border-radius: 5px;
+        transition: 1.0s;
+        color: black;
+        font-weight: bolder;
+
+    }
+
+    .sidebar .usuario {
+        margin-top: -75px;
+    }
+
+}
+
+.menu {
+
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.menu a {
+
+    text-decoration: none;
+    box-sizing: border-box;
+    margin-top: 10px;
+    padding-left: 45.5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+    color: blanchedalmond;
+
+}
+
+.sidebar a:hover {
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+    transition: 0.5s;
+}
+
+
+.menu img {
+    height: 14px;
+    margin-right: 7px;
+
+}
+
+.sidebar .usuario {
+    text-align: center;
+    padding-top: 80px;
+}
